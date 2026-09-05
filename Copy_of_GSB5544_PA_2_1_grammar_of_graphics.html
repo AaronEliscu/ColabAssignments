@@ -123,8 +123,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-outputid="5fe8e6f7-e52b-449f-b787-99b0632ed948" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
-<div id="df-c775a725-c903-4262-9a0c-f3ce752def6c" class="colab-df-container">
-    <div>
+<div>
 
 
 <table class="dataframe caption-top table table-sm table-striped small" data-border="1">
@@ -611,314 +610,184 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 
 </div>
-    <div class="colab-df-buttons">
-
-  <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-c775a725-c903-4262-9a0c-f3ce752def6c')" title="Convert this dataframe to an interactive table." style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
-    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
-  </svg>
-    </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    .colab-df-buttons div {
-      margin-bottom: 4px;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-    <script>
-      const buttonEl =
-        document.querySelector('#df-c775a725-c903-4262-9a0c-f3ce752def6c button.colab-df-convert');
-      buttonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-      async function convertToInteractive(key) {
-        const element = document.querySelector('#df-c775a725-c903-4262-9a0c-f3ce752def6c');
-        const dataTable =
-          await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                    [key], {});
-        if (!dataTable) return;
-
-        const docLinkHtml = 'Like what you see? Visit the ' +
-          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-          + ' to learn more about interactive tables.';
-        element.innerHTML = '';
-        dataTable['output_type'] = 'display_data';
-        await google.colab.output.renderOutput(dataTable, element);
-        const docLink = document.createElement('div');
-        docLink.innerHTML = docLinkHtml;
-        element.appendChild(docLink);
-      }
-    </script>
-  </div>
-
-
-  <div id="id_3baf7418-724b-42de-abbf-c6e5fd6ca3a7">
-    <style>
-      .colab-df-generate {
-        background-color: #E8F0FE;
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        display: none;
-        fill: #1967D2;
-        height: 32px;
-        padding: 0 0 0 0;
-        width: 32px;
-      }
-
-      .colab-df-generate:hover {
-        background-color: #E2EBFA;
-        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-        fill: #174EA6;
-      }
-
-      [theme=dark] .colab-df-generate {
-        background-color: #3B4455;
-        fill: #D2E3FC;
-      }
-
-      [theme=dark] .colab-df-generate:hover {
-        background-color: #434B5C;
-        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-        fill: #FFFFFF;
-      }
-    </style>
-    <button class="colab-df-generate" onclick="generateWithVariable('df')" title="Generate code using this dataframe." style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
-    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"></path>
-  </svg>
-    </button>
-    <script>
-      (() => {
-      const buttonEl =
-        document.querySelector('#id_3baf7418-724b-42de-abbf-c6e5fd6ca3a7 button.colab-df-generate');
-      buttonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-      buttonEl.onclick = () => {
-        google.colab.notebook.generateWithVariable('df');
-      }
-      })();
-    </script>
-  </div>
-
-    </div>
-  </div>
 </div>
 </div>
 <p>The statement “the <code>mtcars</code> dataset does not contain the same types of variables as the penguins dataset” is a little true and a little false. There are no variables that contain text values, BUT there are variables that it makes sense to consider categorical variables. In most situations, it makes sense to treat the values of categorical variables as text values instead of numeric values.</p>
 <p>Some of these variables, like the <code>cyl</code> variable, have numeric values that actually make sense as numbers (i.e.&nbsp;the number of cylinders in the engine). However, it doesn’t make the most sense to “do math” with this type of variable (e.g.&nbsp;take averages and such) because there are so few different value this can take on AND they’re an explicit choice made by the car manufacturer. So, it makes more sense to treat the <code>cyl</code> variable as a categorical variable despite it having numeric values.</p>
 <p>You will need to keep these kinds of nuances about data in mind as you work with an increasing variety and richness of data, and do more complex things with them</p>
 <p>Use the <code>astype()</code> method to convert the categorical variables of the <code>mtcars</code> (df) dataset to have text values in the code chunk below. We’ve done one for you!</p>
-<div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:176}}" data-outputid="bb51b01a-43e4-4cc0-fb05-f9b26e2ce884" data-execution_count="13">
+<div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:176}}" data-outputid="bb51b01a-43e4-4cc0-fb05-f9b26e2ce884" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>categorical_columns <span class="op">=</span> [<span class="st">"am"</span>, <span class="st">"cyl"</span>, <span class="st">"vs"</span>, <span class="st">"gear"</span>, <span class="st">"carb"</span>]</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df[categorical_columns] <span class="op">=</span> df[categorical_columns].astype(<span class="bu">str</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df.dtypes</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_5419/3463344534.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg ansi-bold">      1</span> categorical_columns <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">"am"</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"cyl"</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"vs"</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"gear"</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"carb"</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>df<span class="ansi-blue-fg">[</span>categorical_columns<span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> df<span class="ansi-blue-fg">[</span>categorical_columns<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>astype<span class="ansi-blue-fg">(</span>str<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">      3</span> df<span class="ansi-blue-fg">.</span>dtypes
-
-<span class="ansi-red-fg">NameError</span>: name 'df' is not defined</pre>
-</div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>mpg     float64
+cyl         str
+disp    float64
+hp        int64
+drat    float64
+wt      float64
+qsec    float64
+vs          str
+am          str
+gear        str
+carb        str
+dtype: object</code></pre>
 </div>
 </div>
 <p>If you print out your new dataset, is it clear that the variables have been converted to text values? If so, how can you tell?</p>
 <p>Let’s see how <code>plotnine</code> treats these variables.</p>
 <p>1. Create side-by-side boxplots of the <code>mpg</code> variable by the different values of the <code>am</code> variable.</p>
 <div id="cell-10" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:497}}" data-outputid="10a35f80-356d-4baf-cd1d-d7ab17fac5a6" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_boxplot, labs, theme_minimal</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>(</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"am"</span>, y<span class="op">=</span><span class="st">"mpg"</span>))</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_boxplot()</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Transmission"</span>,</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Miles per gallon"</span>,</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Fuel Efficiency by Transmission Type"</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_boxplot, labs, theme_minimal</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"am"</span>, y<span class="op">=</span><span class="st">"mpg"</span>))</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_boxplot()</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Transmission"</span>,</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Miles per gallon"</span>,</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Fuel Efficiency by Transmission Type"</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-5-output-1.png" width="640" height="480" class="figure-img"></p>
+<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-5-output-1.png" width="647" height="487" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>2. What happens if you convert the <code>am</code> variable back to float values and then try to create the same plot as in the previous part? Explain the differences between the two plots.</p>
 <div id="cell-12" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:497}}" data-outputid="7e3eca3a-a016-49ac-e1d6-634e14db8676" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Having "am" as a float made it so that the plots are not two seperate plots, and they are just made into one because the x-axis turns into a number line because it seees the values as continuous numeric data now.</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"am"</span>] <span class="op">=</span> df[<span class="st">"am"</span>].astype(<span class="bu">float</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_boxplot, labs, theme_minimal</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>(</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"am"</span>, y<span class="op">=</span><span class="st">"mpg"</span>))</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_boxplot()</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Transmission"</span>,</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Miles per gallon"</span>,</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Fuel Efficiency by Transmission Type"</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Having "am" as a float made it so that the plots are not two seperate plots, and they are just made into one because the x-axis turns into a number line because it seees the values as continuous numeric data now.</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"am"</span>] <span class="op">=</span> df[<span class="st">"am"</span>].astype(<span class="bu">float</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_boxplot, labs, theme_minimal</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>(</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"am"</span>, y<span class="op">=</span><span class="st">"mpg"</span>))</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_boxplot()</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Transmission"</span>,</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Miles per gallon"</span>,</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Fuel Efficiency by Transmission Type"</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-6-output-1.png" width="640" height="480" class="figure-img"></p>
+<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-6-output-1.png" width="647" height="487" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>3. Create overlaid histograms of the <code>hp</code> variable for the different values of the <code>cyl</code> variable.</p>
 <div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:497}}" data-outputid="97eb8438-fa22-41b1-b9ed-f7d1a619a99a" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_histogram, labs, theme_minimal</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"cyl"</span>] <span class="op">=</span> df[<span class="st">"cyl"</span>].astype(<span class="st">"category"</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>(</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"hp"</span>, fill<span class="op">=</span><span class="st">"cyl"</span>))</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_histogram(binwidth<span class="op">=</span><span class="dv">20</span>, position<span class="op">=</span><span class="st">"identity"</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Horsepower"</span>,</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Count"</span>,</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Distribution of Horsepower by Cylinder Count"</span>,</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        fill<span class="op">=</span><span class="st">"Cylinders"</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_histogram, labs, theme_minimal</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"cyl"</span>] <span class="op">=</span> df[<span class="st">"cyl"</span>].astype(<span class="st">"category"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>(</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"hp"</span>, fill<span class="op">=</span><span class="st">"cyl"</span>))</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_histogram(binwidth<span class="op">=</span><span class="dv">20</span>, position<span class="op">=</span><span class="st">"identity"</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Horsepower"</span>,</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Count"</span>,</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Distribution of Horsepower by Cylinder Count"</span>,</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>        fill<span class="op">=</span><span class="st">"Cylinders"</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-7-output-1.png" width="640" height="480" class="figure-img"></p>
+<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-7-output-1.png" width="647" height="487" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>4. What happens if you convert the <code>cyl</code> variable back to float values and then try to create the same plot as in the previous part? Explain the differences between the two plots.</p>
 <div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:497}}" data-outputid="03e5c268-c589-4f8f-af28-a01708d5368c" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># When I convert it to a float it turns all the values gray because now it sees them as continuous numeric variables instead of 3 distinct categories.</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"cyl"</span>] <span class="op">=</span> df[<span class="st">"cyl"</span>].astype(<span class="bu">float</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_histogram, labs, theme_minimal</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>(</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"hp"</span>, fill<span class="op">=</span><span class="st">"cyl"</span>))</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_histogram(binwidth<span class="op">=</span><span class="dv">20</span>, position<span class="op">=</span><span class="st">"identity"</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Horsepower"</span>,</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Count"</span>,</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Distribution of Horsepower by Cylinder Count"</span>,</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>        fill<span class="op">=</span><span class="st">"Cylinders"</span></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># When I convert it to a float it turns all the values gray because now it sees them as continuous numeric variables instead of 3 distinct categories.</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"cyl"</span>] <span class="op">=</span> df[<span class="st">"cyl"</span>].astype(<span class="bu">float</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_histogram, labs, theme_minimal</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>(</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"hp"</span>, fill<span class="op">=</span><span class="st">"cyl"</span>))</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_histogram(binwidth<span class="op">=</span><span class="dv">20</span>, position<span class="op">=</span><span class="st">"identity"</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Horsepower"</span>,</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Count"</span>,</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Distribution of Horsepower by Cylinder Count"</span>,</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        fill<span class="op">=</span><span class="st">"Cylinders"</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-8-output-1.png" width="640" height="480" class="figure-img"></p>
+<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-8-output-1.png" width="647" height="487" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>5. Choose a new <code>geometry</code> from the <a href="https://www.data-to-viz.com/">data-to-viz website</a> or look in the <a href="https://python-graph-gallery.com/plotnine/"><code>plotnine</code> graph gallery</a> for a graph that you’d like to explore using the <code>mtcars</code> dataset, and then create that graph. Share your graph with a classmate and discuss it’s advantages and disadvantages.</p>
 <div id="cell-18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:497}}" data-outputid="019b4ebc-f972-4677-d5b6-9bf5a1ab450b" data-execution_count="8">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> (</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    ggplot, aes, geom_point, geom_smooth,</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    labs, theme_minimal</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Treat cylinder count as a categorical grouping variable</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"cyl"</span>] <span class="op">=</span> df[<span class="st">"cyl"</span>].astype(<span class="bu">int</span>).astype(<span class="bu">str</span>)</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>(</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"hp"</span>, y<span class="op">=</span><span class="st">"mpg"</span>, color<span class="op">=</span><span class="st">"cyl"</span>))</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_point(size<span class="op">=</span><span class="dv">3</span>, alpha<span class="op">=</span><span class="fl">0.8</span>)</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_smooth(method<span class="op">=</span><span class="st">"lm"</span>, se<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Fuel Efficiency Declines as Horsepower Increases"</span>,</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Horsepower"</span>,</span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Miles per Gallon"</span>,</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"Cylinders"</span></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> (</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    ggplot, aes, geom_point, geom_smooth,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    labs, theme_minimal</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Treat cylinder count as a categorical grouping variable</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"cyl"</span>] <span class="op">=</span> df[<span class="st">"cyl"</span>].astype(<span class="bu">int</span>).astype(<span class="bu">str</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>(</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"hp"</span>, y<span class="op">=</span><span class="st">"mpg"</span>, color<span class="op">=</span><span class="st">"cyl"</span>))</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_point(size<span class="op">=</span><span class="dv">3</span>, alpha<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_smooth(method<span class="op">=</span><span class="st">"lm"</span>, se<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Fuel Efficiency Declines as Horsepower Increases"</span>,</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Horsepower"</span>,</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Miles per Gallon"</span>,</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"Cylinders"</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-9-output-1.png" width="640" height="480" class="figure-img"></p>
+<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-9-output-1.png" width="647" height="487" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>6. Repeat the previous part for another graph that you’d like to explore using the <code>mtcars</code> dataset, and then create that graph. Share your graph with a classmate and discuss it’s advantages and disadvantages.</p>
 <div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:497}}" data-outputid="9d9e762c-84fa-49bb-80d0-82ec809d6f96" data-execution_count="9">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> (</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    ggplot, aes, geom_bar, labs, theme_minimal</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"cyl"</span>] <span class="op">=</span> df[<span class="st">"cyl"</span>].astype(<span class="bu">int</span>).astype(<span class="bu">str</span>)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>(</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"cyl"</span>, fill<span class="op">=</span><span class="st">"cyl"</span>))</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(show_legend<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Number of Cars by Cylinder Count"</span>,</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Number of Cylinders"</span>,</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Number of Cars"</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your code here</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> (</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    ggplot, aes, geom_bar, labs, theme_minimal</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"cyl"</span>] <span class="op">=</span> df[<span class="st">"cyl"</span>].astype(<span class="bu">int</span>).astype(<span class="bu">str</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>(</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    ggplot(df, aes(x<span class="op">=</span><span class="st">"cyl"</span>, fill<span class="op">=</span><span class="st">"cyl"</span>))</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(show_legend<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Number of Cars by Cylinder Count"</span>,</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Number of Cylinders"</span>,</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"Number of Cars"</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-10-output-1.png" width="640" height="480" class="figure-img"></p>
+<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-10-output-1.png" width="647" height="487" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -928,244 +797,167 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="fev-data">FEV Data</h2>
 <p>(You saw this data set in <a href="https://kevin-davisross.quarto.pub/gsb518-notes/hw-09.html#problem-3">GSB 518</a>.) Do non-smokers have better lungs than smokers? One measure of lung function is forced expiratory volume (FEV), the amount of air (in liters) an individual can exhale in the first second of forceful breath. Larger values of FEV are indicative of better functioning lungs. In a study, FEV was measured for a group of 654 subjects, along with whether they smoked and other variables like age (years). <a href="https://raw.githubusercontent.com/kevindavisross/data301/refs/heads/main/data/FEV.csv">Here is the data.</a></p>
 <p><a href="https://drive.google.com/file/d/1dm7U1cpVpHrbNZrBymOdmtkhMX3U7BwU/view?usp=sharing">This plot</a> was made using <code>plotly</code>. Use AI to help reproduce it using <code>plotnine</code>. Think in terms of the grammar of graphics and the design of the plot and write prompts like “The x-axis is mapped to Age”. It might help to <a href="https://ds-ml-with-python.github.io/Course-Textbook/02-plotnine.html#try-it-out">try the two practice activities in Section 3.6.3 first</a>. (Hint: this is really 3 separate plots. Consider using the <code>patchworklib</code> package, which you need to install in Colab space first.)</p>
-<div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:567}}" data-outputid="1ca48be2-39d6-43e2-e885-8c2e23c81cef" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip <span class="op">-</span>q install numpy<span class="op">==</span><span class="fl">1.26.4</span> pandas<span class="op">==</span><span class="fl">2.2.3</span> plotnine<span class="op">==</span><span class="fl">0.13.6</span> mizani<span class="op">==</span><span class="fl">0.11.4</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span>(</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    ggplot, aes,</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    geom_point, geom_smooth, geom_histogram,</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    labs, theme_minimal, theme,</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    element_blank, coord_flip</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> io</span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> PIL <span class="im">import</span> Image</span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.gridspec <span class="im">as</span> gridspec</span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ggplot_to_image(gg_plot, width, height, dpi<span class="op">=</span><span class="dv">150</span>):</span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    buf <span class="op">=</span> io.BytesIO()</span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    gg_plot.save(</span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>        buf,</span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>        <span class="bu">format</span><span class="op">=</span><span class="st">"png"</span>,</span>
-<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>        width<span class="op">=</span>width,</span>
-<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>        height<span class="op">=</span>height,</span>
-<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>        dpi<span class="op">=</span>dpi,</span>
-<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>        verbose<span class="op">=</span><span class="va">False</span></span>
-<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>    buf.seek(<span class="dv">0</span>)</span>
-<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Image.<span class="bu">open</span>(buf)</span>
-<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the FEV data</span></span>
-<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>fev <span class="op">=</span> pd.read_csv(</span>
-<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://raw.githubusercontent.com/kevindavisross/data301/refs/heads/main/data/FEV.csv"</span></span>
-<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Preprocess the FEV data, using corrected column names based on previous interactions</span></span>
-<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>fev.columns <span class="op">=</span> fev.columns.<span class="bu">str</span>.lower()</span>
-<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>fev[<span class="st">"age_months"</span>] <span class="op">=</span> fev[<span class="st">"age (months)"</span>]</span>
-<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>fev[<span class="st">"smoking_status"</span>] <span class="op">=</span> fev[<span class="st">"smoking status"</span>].astype(<span class="st">"category"</span>)</span>
-<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the three ggplot objects</span></span>
-<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>p1_middle <span class="op">=</span> (</span>
-<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>    ggplot(fev, aes(x<span class="op">=</span><span class="st">"age_months"</span>, y<span class="op">=</span><span class="st">"fev"</span>, color<span class="op">=</span><span class="st">"smoking_status"</span>))</span>
-<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_point(alpha<span class="op">=</span><span class="fl">0.75</span>, size<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_smooth(method<span class="op">=</span><span class="st">"lm"</span>, se<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
-<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"FEV by Age and Smoking Status"</span>,</span>
-<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Age (months)"</span>,</span>
-<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"FEV (liters)"</span>,</span>
-<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"Smoking status"</span></span>
-<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
-<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a>p2_top <span class="op">=</span> (</span>
-<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a>    ggplot(fev, aes(x<span class="op">=</span><span class="st">"age_months"</span>, fill<span class="op">=</span><span class="st">"smoking_status"</span>))</span>
-<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_histogram(</span>
-<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a>        bins<span class="op">=</span><span class="dv">20</span>,</span>
-<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a>        position<span class="op">=</span><span class="st">"identity"</span>,</span>
-<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a>        alpha<span class="op">=</span><span class="fl">0.45</span>,</span>
-<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"white"</span></span>
-<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb10-61"><a href="#cb10-61" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
-<span id="cb10-62"><a href="#cb10-62" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(</span>
-<span id="cb10-63"><a href="#cb10-63" aria-hidden="true" tabindex="-1"></a>        axis_title<span class="op">=</span>element_blank(),</span>
-<span id="cb10-64"><a href="#cb10-64" aria-hidden="true" tabindex="-1"></a>        axis_text_x<span class="op">=</span>element_blank(),</span>
-<span id="cb10-65"><a href="#cb10-65" aria-hidden="true" tabindex="-1"></a>        axis_text_y<span class="op">=</span>element_blank(),</span>
-<span id="cb10-66"><a href="#cb10-66" aria-hidden="true" tabindex="-1"></a>        legend_position<span class="op">=</span><span class="st">"none"</span></span>
-<span id="cb10-67"><a href="#cb10-67" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a>p3_right <span class="op">=</span> (</span>
-<span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a>    ggplot(fev, aes(x<span class="op">=</span><span class="st">"fev"</span>, fill<span class="op">=</span><span class="st">"smoking_status"</span>))</span>
-<span id="cb10-72"><a href="#cb10-72" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_histogram(</span>
-<span id="cb10-73"><a href="#cb10-73" aria-hidden="true" tabindex="-1"></a>        bins<span class="op">=</span><span class="dv">20</span>,</span>
-<span id="cb10-74"><a href="#cb10-74" aria-hidden="true" tabindex="-1"></a>        position<span class="op">=</span><span class="st">"identity"</span>,</span>
-<span id="cb10-75"><a href="#cb10-75" aria-hidden="true" tabindex="-1"></a>        alpha<span class="op">=</span><span class="fl">0.45</span>,</span>
-<span id="cb10-76"><a href="#cb10-76" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"white"</span></span>
-<span id="cb10-77"><a href="#cb10-77" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb10-78"><a href="#cb10-78" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> coord_flip()</span>
-<span id="cb10-79"><a href="#cb10-79" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
-<span id="cb10-80"><a href="#cb10-80" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(</span>
-<span id="cb10-81"><a href="#cb10-81" aria-hidden="true" tabindex="-1"></a>        axis_title<span class="op">=</span>element_blank(),</span>
-<span id="cb10-82"><a href="#cb10-82" aria-hidden="true" tabindex="-1"></a>        axis_text_x<span class="op">=</span>element_blank(),</span>
-<span id="cb10-83"><a href="#cb10-83" aria-hidden="true" tabindex="-1"></a>        axis_text_y<span class="op">=</span>element_blank(),</span>
-<span id="cb10-84"><a href="#cb10-84" aria-hidden="true" tabindex="-1"></a>        legend_position<span class="op">=</span><span class="st">"none"</span></span>
-<span id="cb10-85"><a href="#cb10-85" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb10-86"><a href="#cb10-86" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-87"><a href="#cb10-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-88"><a href="#cb10-88" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert ggplot objects to images</span></span>
-<span id="cb10-89"><a href="#cb10-89" aria-hidden="true" tabindex="-1"></a>img_top <span class="op">=</span> ggplot_to_image(p2_top, width<span class="op">=</span><span class="dv">6</span>, height<span class="op">=</span><span class="fl">1.5</span>)</span>
-<span id="cb10-90"><a href="#cb10-90" aria-hidden="true" tabindex="-1"></a>img_main <span class="op">=</span> ggplot_to_image(p1_middle, width<span class="op">=</span><span class="dv">6</span>, height<span class="op">=</span><span class="dv">4</span>)</span>
-<span id="cb10-91"><a href="#cb10-91" aria-hidden="true" tabindex="-1"></a>img_right <span class="op">=</span> ggplot_to_image(p3_right, width<span class="op">=</span><span class="fl">1.5</span>, height<span class="op">=</span><span class="dv">4</span>)</span>
-<span id="cb10-92"><a href="#cb10-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-93"><a href="#cb10-93" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
-<span id="cb10-94"><a href="#cb10-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-95"><a href="#cb10-95" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> gridspec.GridSpec(</span>
-<span id="cb10-96"><a href="#cb10-96" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>, <span class="dv">2</span>,</span>
-<span id="cb10-97"><a href="#cb10-97" aria-hidden="true" tabindex="-1"></a>    width_ratios<span class="op">=</span>[<span class="dv">6</span>, <span class="fl">1.5</span>],</span>
-<span id="cb10-98"><a href="#cb10-98" aria-hidden="true" tabindex="-1"></a>    height_ratios<span class="op">=</span>[<span class="fl">1.5</span>, <span class="dv">4</span>],</span>
-<span id="cb10-99"><a href="#cb10-99" aria-hidden="true" tabindex="-1"></a>    wspace<span class="op">=</span><span class="dv">0</span>,</span>
-<span id="cb10-100"><a href="#cb10-100" aria-hidden="true" tabindex="-1"></a>    hspace<span class="op">=</span><span class="dv">0</span></span>
-<span id="cb10-101"><a href="#cb10-101" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-102"><a href="#cb10-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-103"><a href="#cb10-103" aria-hidden="true" tabindex="-1"></a>ax_top <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>, <span class="dv">0</span>])</span>
-<span id="cb10-104"><a href="#cb10-104" aria-hidden="true" tabindex="-1"></a>ax_main <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>, <span class="dv">0</span>])</span>
-<span id="cb10-105"><a href="#cb10-105" aria-hidden="true" tabindex="-1"></a>ax_right <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>, <span class="dv">1</span>])</span>
-<span id="cb10-106"><a href="#cb10-106" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-107"><a href="#cb10-107" aria-hidden="true" tabindex="-1"></a>ax_top.imshow(img_top)</span>
-<span id="cb10-108"><a href="#cb10-108" aria-hidden="true" tabindex="-1"></a>ax_main.imshow(img_main)</span>
-<span id="cb10-109"><a href="#cb10-109" aria-hidden="true" tabindex="-1"></a>ax_right.imshow(img_right)</span>
-<span id="cb10-110"><a href="#cb10-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-111"><a href="#cb10-111" aria-hidden="true" tabindex="-1"></a>ax_top.axis(<span class="st">"off"</span>)</span>
-<span id="cb10-112"><a href="#cb10-112" aria-hidden="true" tabindex="-1"></a>ax_main.axis(<span class="st">"off"</span>)</span>
-<span id="cb10-113"><a href="#cb10-113" aria-hidden="true" tabindex="-1"></a>ax_right.axis(<span class="st">"off"</span>)</span>
-<span id="cb10-114"><a href="#cb10-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-115"><a href="#cb10-115" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<div class="ansi-escaped-output">
-<pre>     <span class="ansi-bright-black-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">89.9/89.9 kB</span> <span class="ansi-red-fg">4.2 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
+<div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:567}}" data-outputid="1ca48be2-39d6-43e2-e885-8c2e23c81cef" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip <span class="op">-</span>q install numpy<span class="op">==</span><span class="fl">1.26.4</span> pandas<span class="op">==</span><span class="fl">2.2.3</span> plotnine<span class="op">==</span><span class="fl">0.13.6</span> mizani<span class="op">==</span><span class="fl">0.11.4</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span>(</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    ggplot, aes,</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    geom_point, geom_smooth, geom_histogram,</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    labs, theme_minimal, theme,</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    element_blank, coord_flip</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> io</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> PIL <span class="im">import</span> Image</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.gridspec <span class="im">as</span> gridspec</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ggplot_to_image(gg_plot, width, height, dpi<span class="op">=</span><span class="dv">150</span>):</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>    buf <span class="op">=</span> io.BytesIO()</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>    gg_plot.save(</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>        buf,</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>        <span class="bu">format</span><span class="op">=</span><span class="st">"png"</span>,</span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>        width<span class="op">=</span>width,</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>        height<span class="op">=</span>height,</span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>        dpi<span class="op">=</span>dpi,</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>        verbose<span class="op">=</span><span class="va">False</span></span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>    buf.seek(<span class="dv">0</span>)</span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Image.<span class="bu">open</span>(buf)</span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the FEV data</span></span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>fev <span class="op">=</span> pd.read_csv(</span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://raw.githubusercontent.com/kevindavisross/data301/refs/heads/main/data/FEV.csv"</span></span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Preprocess the FEV data, using corrected column names based on previous interactions</span></span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>fev.columns <span class="op">=</span> fev.columns.<span class="bu">str</span>.lower()</span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>fev[<span class="st">"age_months"</span>] <span class="op">=</span> fev[<span class="st">"age (months)"</span>]</span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a>fev[<span class="st">"smoking_status"</span>] <span class="op">=</span> fev[<span class="st">"smoking status"</span>].astype(<span class="st">"category"</span>)</span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the three ggplot objects</span></span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>p1_middle <span class="op">=</span> (</span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a>    ggplot(fev, aes(x<span class="op">=</span><span class="st">"age_months"</span>, y<span class="op">=</span><span class="st">"fev"</span>, color<span class="op">=</span><span class="st">"smoking_status"</span>))</span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_point(alpha<span class="op">=</span><span class="fl">0.75</span>, size<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_smooth(method<span class="op">=</span><span class="st">"lm"</span>, se<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
+<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"FEV by Age and Smoking Status"</span>,</span>
+<span id="cb11-46"><a href="#cb11-46" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"Age (months)"</span>,</span>
+<span id="cb11-47"><a href="#cb11-47" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"FEV (liters)"</span>,</span>
+<span id="cb11-48"><a href="#cb11-48" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"Smoking status"</span></span>
+<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb11-50"><a href="#cb11-50" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
+<span id="cb11-51"><a href="#cb11-51" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-52"><a href="#cb11-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-53"><a href="#cb11-53" aria-hidden="true" tabindex="-1"></a>p2_top <span class="op">=</span> (</span>
+<span id="cb11-54"><a href="#cb11-54" aria-hidden="true" tabindex="-1"></a>    ggplot(fev, aes(x<span class="op">=</span><span class="st">"age_months"</span>, fill<span class="op">=</span><span class="st">"smoking_status"</span>))</span>
+<span id="cb11-55"><a href="#cb11-55" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_histogram(</span>
+<span id="cb11-56"><a href="#cb11-56" aria-hidden="true" tabindex="-1"></a>        bins<span class="op">=</span><span class="dv">20</span>,</span>
+<span id="cb11-57"><a href="#cb11-57" aria-hidden="true" tabindex="-1"></a>        position<span class="op">=</span><span class="st">"identity"</span>,</span>
+<span id="cb11-58"><a href="#cb11-58" aria-hidden="true" tabindex="-1"></a>        alpha<span class="op">=</span><span class="fl">0.45</span>,</span>
+<span id="cb11-59"><a href="#cb11-59" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"white"</span></span>
+<span id="cb11-60"><a href="#cb11-60" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb11-61"><a href="#cb11-61" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
+<span id="cb11-62"><a href="#cb11-62" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(</span>
+<span id="cb11-63"><a href="#cb11-63" aria-hidden="true" tabindex="-1"></a>        axis_title<span class="op">=</span>element_blank(),</span>
+<span id="cb11-64"><a href="#cb11-64" aria-hidden="true" tabindex="-1"></a>        axis_text_x<span class="op">=</span>element_blank(),</span>
+<span id="cb11-65"><a href="#cb11-65" aria-hidden="true" tabindex="-1"></a>        axis_text_y<span class="op">=</span>element_blank(),</span>
+<span id="cb11-66"><a href="#cb11-66" aria-hidden="true" tabindex="-1"></a>        legend_position<span class="op">=</span><span class="st">"none"</span></span>
+<span id="cb11-67"><a href="#cb11-67" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb11-68"><a href="#cb11-68" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-69"><a href="#cb11-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-70"><a href="#cb11-70" aria-hidden="true" tabindex="-1"></a>p3_right <span class="op">=</span> (</span>
+<span id="cb11-71"><a href="#cb11-71" aria-hidden="true" tabindex="-1"></a>    ggplot(fev, aes(x<span class="op">=</span><span class="st">"fev"</span>, fill<span class="op">=</span><span class="st">"smoking_status"</span>))</span>
+<span id="cb11-72"><a href="#cb11-72" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_histogram(</span>
+<span id="cb11-73"><a href="#cb11-73" aria-hidden="true" tabindex="-1"></a>        bins<span class="op">=</span><span class="dv">20</span>,</span>
+<span id="cb11-74"><a href="#cb11-74" aria-hidden="true" tabindex="-1"></a>        position<span class="op">=</span><span class="st">"identity"</span>,</span>
+<span id="cb11-75"><a href="#cb11-75" aria-hidden="true" tabindex="-1"></a>        alpha<span class="op">=</span><span class="fl">0.45</span>,</span>
+<span id="cb11-76"><a href="#cb11-76" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"white"</span></span>
+<span id="cb11-77"><a href="#cb11-77" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb11-78"><a href="#cb11-78" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> coord_flip()</span>
+<span id="cb11-79"><a href="#cb11-79" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_minimal()</span>
+<span id="cb11-80"><a href="#cb11-80" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(</span>
+<span id="cb11-81"><a href="#cb11-81" aria-hidden="true" tabindex="-1"></a>        axis_title<span class="op">=</span>element_blank(),</span>
+<span id="cb11-82"><a href="#cb11-82" aria-hidden="true" tabindex="-1"></a>        axis_text_x<span class="op">=</span>element_blank(),</span>
+<span id="cb11-83"><a href="#cb11-83" aria-hidden="true" tabindex="-1"></a>        axis_text_y<span class="op">=</span>element_blank(),</span>
+<span id="cb11-84"><a href="#cb11-84" aria-hidden="true" tabindex="-1"></a>        legend_position<span class="op">=</span><span class="st">"none"</span></span>
+<span id="cb11-85"><a href="#cb11-85" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb11-86"><a href="#cb11-86" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-87"><a href="#cb11-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-88"><a href="#cb11-88" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert ggplot objects to images</span></span>
+<span id="cb11-89"><a href="#cb11-89" aria-hidden="true" tabindex="-1"></a>img_top <span class="op">=</span> ggplot_to_image(p2_top, width<span class="op">=</span><span class="dv">6</span>, height<span class="op">=</span><span class="fl">1.5</span>)</span>
+<span id="cb11-90"><a href="#cb11-90" aria-hidden="true" tabindex="-1"></a>img_main <span class="op">=</span> ggplot_to_image(p1_middle, width<span class="op">=</span><span class="dv">6</span>, height<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb11-91"><a href="#cb11-91" aria-hidden="true" tabindex="-1"></a>img_right <span class="op">=</span> ggplot_to_image(p3_right, width<span class="op">=</span><span class="fl">1.5</span>, height<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb11-92"><a href="#cb11-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-93"><a href="#cb11-93" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb11-94"><a href="#cb11-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-95"><a href="#cb11-95" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> gridspec.GridSpec(</span>
+<span id="cb11-96"><a href="#cb11-96" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>, <span class="dv">2</span>,</span>
+<span id="cb11-97"><a href="#cb11-97" aria-hidden="true" tabindex="-1"></a>    width_ratios<span class="op">=</span>[<span class="dv">6</span>, <span class="fl">1.5</span>],</span>
+<span id="cb11-98"><a href="#cb11-98" aria-hidden="true" tabindex="-1"></a>    height_ratios<span class="op">=</span>[<span class="fl">1.5</span>, <span class="dv">4</span>],</span>
+<span id="cb11-99"><a href="#cb11-99" aria-hidden="true" tabindex="-1"></a>    wspace<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb11-100"><a href="#cb11-100" aria-hidden="true" tabindex="-1"></a>    hspace<span class="op">=</span><span class="dv">0</span></span>
+<span id="cb11-101"><a href="#cb11-101" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-102"><a href="#cb11-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-103"><a href="#cb11-103" aria-hidden="true" tabindex="-1"></a>ax_top <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>, <span class="dv">0</span>])</span>
+<span id="cb11-104"><a href="#cb11-104" aria-hidden="true" tabindex="-1"></a>ax_main <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>, <span class="dv">0</span>])</span>
+<span id="cb11-105"><a href="#cb11-105" aria-hidden="true" tabindex="-1"></a>ax_right <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>, <span class="dv">1</span>])</span>
+<span id="cb11-106"><a href="#cb11-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-107"><a href="#cb11-107" aria-hidden="true" tabindex="-1"></a>ax_top.imshow(img_top)</span>
+<span id="cb11-108"><a href="#cb11-108" aria-hidden="true" tabindex="-1"></a>ax_main.imshow(img_main)</span>
+<span id="cb11-109"><a href="#cb11-109" aria-hidden="true" tabindex="-1"></a>ax_right.imshow(img_right)</span>
+<span id="cb11-110"><a href="#cb11-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-111"><a href="#cb11-111" aria-hidden="true" tabindex="-1"></a>ax_top.axis(<span class="st">"off"</span>)</span>
+<span id="cb11-112"><a href="#cb11-112" aria-hidden="true" tabindex="-1"></a>ax_main.axis(<span class="st">"off"</span>)</span>
+<span id="cb11-113"><a href="#cb11-113" aria-hidden="true" tabindex="-1"></a>ax_right.axis(<span class="st">"off"</span>)</span>
+<span id="cb11-114"><a href="#cb11-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-115"><a href="#cb11-115" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  error: subprocess-exited-with-error
+  
+  Preparing metadata (pyproject.toml) did not run successfully.
+  exit code: 1
+  
+  [21 lines of output]
+  + C:\Users\aaron\anaconda3\python.exe C:\Users\aaron\AppData\Local\Temp\pip-install-ijljbtvr\numpy_540c1db364034289bf25b44c09f6ac1f\vendored-meson\meson\meson.py setup C:\Users\aaron\AppData\Local\Temp\pip-install-ijljbtvr\numpy_540c1db364034289bf25b44c09f6ac1f C:\Users\aaron\AppData\Local\Temp\pip-install-ijljbtvr\numpy_540c1db364034289bf25b44c09f6ac1f\.mesonpy-1f5u_572 -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --native-file=C:\Users\aaron\AppData\Local\Temp\pip-install-ijljbtvr\numpy_540c1db364034289bf25b44c09f6ac1f\.mesonpy-1f5u_572\meson-python-native-file.ini
+  The Meson build system
+  Version: 1.2.99
+  Source dir: C:\Users\aaron\AppData\Local\Temp\pip-install-ijljbtvr\numpy_540c1db364034289bf25b44c09f6ac1f
+  Build dir: C:\Users\aaron\AppData\Local\Temp\pip-install-ijljbtvr\numpy_540c1db364034289bf25b44c09f6ac1f\.mesonpy-1f5u_572
+  Build type: native build
+  Project name: NumPy
+  Project version: 1.26.4
+  WARNING: Failed to activate VS environment: Could not parse vswhere.exe output
+  
+  ..\meson.build:1:0: ERROR: Unknown compiler(s): [['icl'], ['cl'], ['cc'], ['gcc'], ['clang'], ['clang-cl'], ['pgcc']]
+  The following exception(s) were encountered:
+  Running `icl ""` gave "[WinError 2] The system cannot find the file specified"
+  Running `cl /?` gave "[WinError 2] The system cannot find the file specified"
+  Running `cc --version` gave "[WinError 2] The system cannot find the file specified"
+  Running `gcc --version` gave "[WinError 2] The system cannot find the file specified"
+  Running `clang --version` gave "[WinError 2] The system cannot find the file specified"
+  Running `clang-cl /?` gave "[WinError 2] The system cannot find the file specified"
+  Running `pgcc --version` gave "[WinError 2] The system cannot find the file specified"
+  
+  A full log can be found at C:\Users\aaron\AppData\Local\Temp\pip-install-ijljbtvr\numpy_540c1db364034289bf25b44c09f6ac1f\.mesonpy-1f5u_572\meson-logs\meson-log.txt
+  [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
 
-   <span class="ansi-bright-black-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">12.7/12.7 MB</span> <span class="ansi-red-fg">83.8 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
+Encountered error while generating package metadata.
 
-<span class="ansi-red-fg">ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+numpy
 
-tobler 0.14.0 requires numpy&gt;=2.0, but you have numpy 1.26.4 which is incompatible.
-
-datasets 4.0.0 requires dill&lt;0.3.9,&gt;=0.3.0, but you have dill 0.4.1 which is incompatible.
-
-shap 0.52.0 requires numpy&gt;=2, but you have numpy 1.26.4 which is incompatible.</span><span class="ansi-red-fg">
-
-</span></pre>
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.</code></pre>
 </div>
-</div>
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_19021/3156717730.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg ansi-bold">     87</span> 
-<span class="ansi-green-fg ansi-bold">     88</span> <span class="ansi-red-fg"># Convert ggplot objects to images</span>
-<span class="ansi-green-fg">---&gt; 89</span><span class="ansi-red-fg"> </span>img_top <span class="ansi-blue-fg">=</span> ggplot_to_image<span class="ansi-blue-fg">(</span>p2_top<span class="ansi-blue-fg">,</span> width<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">6</span><span class="ansi-blue-fg">,</span> height<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1.5</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">     90</span> img_main <span class="ansi-blue-fg">=</span> ggplot_to_image<span class="ansi-blue-fg">(</span>p1_middle<span class="ansi-blue-fg">,</span> width<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">6</span><span class="ansi-blue-fg">,</span> height<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">     91</span> img_right <span class="ansi-blue-fg">=</span> ggplot_to_image<span class="ansi-blue-fg">(</span>p3_right<span class="ansi-blue-fg">,</span> width<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1.5</span><span class="ansi-blue-fg">,</span> height<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/tmp/ipykernel_19021/3156717730.py</span> in <span class="ansi-cyan-fg">ggplot_to_image</span><span class="ansi-blue-fg">(gg_plot, width, height, dpi)</span>
-<span class="ansi-green-fg ansi-bold">     16</span> <span class="ansi-green-fg">def</span> ggplot_to_image<span class="ansi-blue-fg">(</span>gg_plot<span class="ansi-blue-fg">,</span> width<span class="ansi-blue-fg">,</span> height<span class="ansi-blue-fg">,</span> dpi<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">150</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg ansi-bold">     17</span>     buf <span class="ansi-blue-fg">=</span> io<span class="ansi-blue-fg">.</span>BytesIO<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">---&gt; 18</span><span class="ansi-red-fg">     gg_plot.save(
-</span><span class="ansi-green-fg ansi-bold">     19</span>         buf<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg ansi-bold">     20</span>         format<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">"png"</span><span class="ansi-blue-fg">,</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/plotnine/ggplot.py</span> in <span class="ansi-cyan-fg">save</span><span class="ansi-blue-fg">(self, filename, format, path, width, height, units, dpi, limitsize, verbose, **kwargs)</span>
-<span class="ansi-green-fg ansi-bold">    661</span>             Additional arguments to <span class="ansi-green-fg">pass</span> to matplotlib<span class="ansi-red-fg"> </span><span class="ansi-red-fg">`</span>savefig<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-red-fg">`</span><span class="ansi-blue-fg">.</span>
-<span class="ansi-green-fg ansi-bold">    662</span>         """
-<span class="ansi-green-fg">--&gt; 663</span><span class="ansi-red-fg">         sv = self.save_helper(
-</span><span class="ansi-green-fg ansi-bold">    664</span>             filename<span class="ansi-blue-fg">=</span>filename<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg ansi-bold">    665</span>             format<span class="ansi-blue-fg">=</span>format<span class="ansi-blue-fg">,</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/plotnine/ggplot.py</span> in <span class="ansi-cyan-fg">save_helper</span><span class="ansi-blue-fg">(self, filename, format, path, width, height, units, dpi, limitsize, verbose, **kwargs)</span>
-<span class="ansi-green-fg ansi-bold">    610</span>             self<span class="ansi-blue-fg">.</span>theme <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>theme <span class="ansi-blue-fg">+</span> theme<span class="ansi-blue-fg">(</span>dpi<span class="ansi-blue-fg">=</span>dpi<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    611</span> 
-<span class="ansi-green-fg">--&gt; 612</span><span class="ansi-red-fg">         </span>figure <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>draw<span class="ansi-blue-fg">(</span>show<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    613</span>         <span class="ansi-green-fg">return</span> mpl_save_view<span class="ansi-blue-fg">(</span>figure<span class="ansi-blue-fg">,</span> fig_kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    614</span> 
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/plotnine/ggplot.py</span> in <span class="ansi-cyan-fg">draw</span><span class="ansi-blue-fg">(self, show)</span>
-<span class="ansi-green-fg ansi-bold">    270</span>         self <span class="ansi-blue-fg">=</span> deepcopy<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    271</span>         <span class="ansi-green-fg">with</span> plot_context<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> show<span class="ansi-blue-fg">=</span>show<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 272</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>_build<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    273</span> 
-<span class="ansi-green-fg ansi-bold">    274</span>             <span class="ansi-red-fg"># setup</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/plotnine/ggplot.py</span> in <span class="ansi-cyan-fg">_build</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-fg ansi-bold">    356</span>         <span class="ansi-red-fg"># Initialise panels, add extra data for margins &amp; missing</span>
-<span class="ansi-green-fg ansi-bold">    357</span>         <span class="ansi-red-fg"># facetting variables, and add on a PANEL variable to data</span>
-<span class="ansi-green-fg">--&gt; 358</span><span class="ansi-red-fg">         </span>layout<span class="ansi-blue-fg">.</span>setup<span class="ansi-blue-fg">(</span>layers<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    359</span> 
-<span class="ansi-green-fg ansi-bold">    360</span>         <span class="ansi-red-fg"># Compute aesthetics to produce data with generalised</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/plotnine/facets/layout.py</span> in <span class="ansi-cyan-fg">setup</span><span class="ansi-blue-fg">(self, layers, plot)</span>
-<span class="ansi-green-fg ansi-bold">     75</span>         <span class="ansi-red-fg"># Generate panel layout</span>
-<span class="ansi-green-fg ansi-bold">     76</span>         data <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>facet<span class="ansi-blue-fg">.</span>setup_data<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">---&gt; 77</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>layout <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>facet<span class="ansi-blue-fg">.</span>compute_layout<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">     78</span>         self<span class="ansi-blue-fg">.</span>layout <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>coord<span class="ansi-blue-fg">.</span>setup_layout<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>layout<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">     79</span>         self<span class="ansi-blue-fg">.</span>check_layout<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/plotnine/facets/facet_null.py</span> in <span class="ansi-cyan-fg">compute_layout</span><span class="ansi-blue-fg">(self, data)</span>
-<span class="ansi-green-fg ansi-bold">     33</span>         data<span class="ansi-blue-fg">:</span> list<span class="ansi-blue-fg">[</span>pd<span class="ansi-blue-fg">.</span>DataFrame<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg ansi-bold">     34</span>     ) -&gt; pd.DataFrame:
-<span class="ansi-green-fg">---&gt; 35</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> layout_null<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/plotnine/facets/facet.py</span> in <span class="ansi-cyan-fg">layout_null</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg ansi-bold">    533</span>     layout = pd.DataFrame(
-<span class="ansi-green-fg ansi-bold">    534</span>         {
-<span class="ansi-green-fg">--&gt; 535</span><span class="ansi-red-fg">             </span><span class="ansi-blue-fg">"PANEL"</span><span class="ansi-blue-fg">:</span> pd<span class="ansi-blue-fg">.</span>Categorical<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg ansi-bold">    536</span>             <span class="ansi-blue-fg">"ROW"</span><span class="ansi-blue-fg">:</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg ansi-bold">    537</span>             <span class="ansi-blue-fg">"COL"</span><span class="ansi-blue-fg">:</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/arrays/categorical.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, values, categories, ordered, dtype, copy)</span>
-<span class="ansi-green-fg ansi-bold">    432</span>                 null_mask <span class="ansi-blue-fg">=</span> isna<span class="ansi-blue-fg">(</span>arr<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    433</span>                 <span class="ansi-green-fg">if</span> null_mask<span class="ansi-blue-fg">.</span>any<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 434</span><span class="ansi-red-fg">                     </span><span class="ansi-red-fg"># We remove null values here, then below will re-insert</span>
-<span class="ansi-green-fg ansi-bold">    435</span>                     <span class="ansi-red-fg">#  them, grep "full_codes"</span>
-<span class="ansi-green-fg ansi-bold">    436</span>                     arr_list <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span>values<span class="ansi-blue-fg">[</span>idx<span class="ansi-blue-fg">]</span> <span class="ansi-green-fg">for</span> idx <span class="ansi-green-fg">in</span> np<span class="ansi-blue-fg">.</span>where<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">~</span>null_mask<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/dtypes/missing.py</span> in <span class="ansi-cyan-fg">isna</span><span class="ansi-blue-fg">(obj)</span>
-<span class="ansi-green-fg ansi-bold">    172</span> 
-<span class="ansi-green-fg ansi-bold">    173</span>     <span class="ansi-blue-fg">&gt;&gt;</span><span class="ansi-blue-fg">&gt;</span> pd<span class="ansi-blue-fg">.</span>isna<span class="ansi-blue-fg">(</span>df<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 174</span><span class="ansi-red-fg">     </span><span class="ansi-cyan-fg">0</span>    <span class="ansi-green-fg">False</span>
-<span class="ansi-green-fg ansi-bold">    175</span>     <span class="ansi-cyan-fg">1</span>     <span class="ansi-green-fg">True</span>
-<span class="ansi-green-fg ansi-bold">    176</span>     Name<span class="ansi-blue-fg">:</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">:</span> bool
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/dtypes/missing.py</span> in <span class="ansi-cyan-fg">_isna</span><span class="ansi-blue-fg">(obj)</span>
-<span class="ansi-green-fg ansi-bold">    198</span>     boolean ndarray <span class="ansi-green-fg">or</span> boolean
-<span class="ansi-green-fg ansi-bold">    199</span>     """
-<span class="ansi-green-fg">--&gt; 200</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">if</span> is_scalar<span class="ansi-blue-fg">(</span>obj<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg ansi-bold">    201</span>         <span class="ansi-green-fg">return</span> libmissing<span class="ansi-blue-fg">.</span>checknull<span class="ansi-blue-fg">(</span>obj<span class="ansi-blue-fg">,</span> inf_as_na<span class="ansi-blue-fg">=</span>inf_as_na<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    202</span>     <span class="ansi-green-fg">elif</span> isinstance<span class="ansi-blue-fg">(</span>obj<span class="ansi-blue-fg">,</span> ABCMultiIndex<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/dtypes/missing.py</span> in <span class="ansi-cyan-fg">_isna_array</span><span class="ansi-blue-fg">(values)</span>
-<span class="ansi-green-fg ansi-bold">    244</span>     <span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span>
-<span class="ansi-green-fg ansi-bold">    245</span>     This approach to setting <span class="ansi-green-fg">global</span> module values <span class="ansi-green-fg">is</span> discussed <span class="ansi-green-fg">and</span>
-<span class="ansi-green-fg">--&gt; 246</span><span class="ansi-red-fg">     </span>approved here<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg ansi-bold">    247</span> 
-<span class="ansi-green-fg ansi-bold">    248</span>     <span class="ansi-blue-fg">*</span> https<span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">//</span>stackoverflow<span class="ansi-blue-fg">.</span>com<span class="ansi-blue-fg">/</span>questions<span class="ansi-blue-fg">/</span><span class="ansi-cyan-fg">4859217</span><span class="ansi-blue-fg">/</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/numpy/__init__.py</span> in <span class="ansi-cyan-fg">__getattr__</span><span class="ansi-blue-fg">(attr)</span>
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'numpy.rec'
-
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span><span class="ansi-green-fg">
-NOTE: If your import is failing due to a missing package, you can
-manually install dependencies using either !pip or !apt.
-
-To view examples of installing some common dependencies, click the
-"Open Examples" button below.
-</span><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-</pre>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-11-output-2.png" width="639" height="478" class="figure-img"></p>
+</figure>
 </div>
 </div>
 </div>
@@ -1243,132 +1035,37 @@ To view examples of installing some common dependencies, click the
 <ol type="1">
 <li>Create a new data frame with the scores in long format, with columns labeled “Event” and “Score”. There are a few ways to do this, so see what you can find!</li>
 </ol>
-<div id="cell-26" class="cell" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>df_gym <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/mshsu/probasets/refs/heads/main/data/OlympicAllAround.csv"</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>df_gym</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>df_gym_long <span class="op">=</span> df_gym.melt(id_vars <span class="op">=</span> [<span class="st">"Gymnast"</span>, <span class="st">"NOC"</span>, <span class="st">"Round"</span>, <span class="st">"Year"</span>],</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>                          value_vars<span class="op">=</span>[<span class="st">"Floor Exercise"</span>, <span class="st">"Pommelled Horse"</span>, <span class="st">"Rings"</span>, <span class="st">"Horse Vault"</span>, <span class="st">"Parallel Bars"</span>, <span class="st">"Horizontal Bar"</span>],</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>                          var_name <span class="op">=</span> <span class="st">"event"</span>, value_name <span class="op">=</span> <span class="st">"score"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-26" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>df_gym <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/mshsu/probasets/refs/heads/main/data/OlympicAllAround.csv"</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df_gym</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>df_gym_long <span class="op">=</span> df_gym.melt(id_vars <span class="op">=</span> [<span class="st">"Gymnast"</span>, <span class="st">"NOC"</span>, <span class="st">"Round"</span>, <span class="st">"Year"</span>],</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>                          value_vars<span class="op">=</span>[<span class="st">"Floor Exercise"</span>, <span class="st">"Pommelled Horse"</span>, <span class="st">"Rings"</span>, <span class="st">"Horse Vault"</span>, <span class="st">"Parallel Bars"</span>, <span class="st">"Horizontal Bar"</span>],</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>                          var_name <span class="op">=</span> <span class="st">"event"</span>, value_name <span class="op">=</span> <span class="st">"score"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>2. Now create a graphic which summarizes the distribution of scores across events and years, and any other features you want to add. Be creative! Share your graph with a classmate and discuss why you designed it the way you did.</p>
-<div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:443}}" data-outputid="66ce06fc-4269-4a45-fe3a-eae346aff7b2" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> <span class="op">*</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>(</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    ggplot(df_gym_long.dropna(),</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>           aes(x<span class="op">=</span><span class="st">"event"</span>, y<span class="op">=</span><span class="st">"score"</span>, fill<span class="op">=</span><span class="st">"Round"</span>))</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_boxplot()</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> facet_wrap(<span class="st">"Year"</span>)</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> coord_flip()</span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"event"</span>,</span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"score"</span>,</span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>        fill<span class="op">=</span><span class="st">"Round"</span>,</span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Olympic Men's Gymnastics Scores by Event, Year, and Round"</span></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_bw()</span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_19021/2171947497.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg ansi-bold">      2</span> <span class="ansi-green-fg">from</span> plotnine <span class="ansi-green-fg">import</span> <span class="ansi-blue-fg">*</span>
-<span class="ansi-green-fg ansi-bold">      3</span> (
-<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg">     ggplot(df_gym_long.dropna(),
-</span><span class="ansi-green-fg ansi-bold">      5</span>            aes(x="event", y="score", fill="Round"))
-<span class="ansi-green-fg ansi-bold">      6</span>     <span class="ansi-blue-fg">+</span> geom_boxplot<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/frame.py</span> in <span class="ansi-cyan-fg">dropna</span><span class="ansi-blue-fg">(self, axis, how, thresh, subset, inplace, ignore_index)</span>
-<span class="ansi-green-fg ansi-bold">   7809</span>         <span class="ansi-green-fg">in</span> a similar manner<span class="ansi-blue-fg">.</span> Note that column<span class="ansi-blue-fg">-</span>wise <span class="ansi-green-fg">is</span> the default behaviour<span class="ansi-blue-fg">.</span>
-<span class="ansi-green-fg ansi-bold">   7810</span>         By <span class="ansi-green-fg">not</span> supplying any arguments <span class="ansi-green-fg">for</span> i <span class="ansi-green-fg">and</span> j<span class="ansi-blue-fg">,</span> we swap the last <span class="ansi-green-fg">and</span> second to
-<span class="ansi-green-fg">-&gt; 7811</span><span class="ansi-red-fg">         </span>last indices<span class="ansi-blue-fg">.</span>
-<span class="ansi-green-fg ansi-bold">   7812</span> 
-<span class="ansi-green-fg ansi-bold">   7813</span>         <span class="ansi-blue-fg">&gt;&gt;</span><span class="ansi-blue-fg">&gt;</span> df<span class="ansi-blue-fg">.</span>swaplevel<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/dtypes/missing.py</span> in <span class="ansi-cyan-fg">notna</span><span class="ansi-blue-fg">(obj)</span>
-<span class="ansi-green-fg ansi-bold">    386</span>     arrays, ``None`` or ``NaN`` in object arrays, ``NaT`` in datetimelike).
-<span class="ansi-green-fg ansi-bold">    387</span> 
-<span class="ansi-green-fg">--&gt; 388</span><span class="ansi-red-fg">     </span>Parameters
-<span class="ansi-green-fg ansi-bold">    389</span>     <span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span>
-<span class="ansi-green-fg ansi-bold">    390</span>     obj <span class="ansi-blue-fg">:</span> array<span class="ansi-blue-fg">-</span>like <span class="ansi-green-fg">or</span> object value
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/dtypes/missing.py</span> in <span class="ansi-cyan-fg">isna</span><span class="ansi-blue-fg">(obj)</span>
-<span class="ansi-green-fg ansi-bold">    172</span> 
-<span class="ansi-green-fg ansi-bold">    173</span>     <span class="ansi-blue-fg">&gt;&gt;</span><span class="ansi-blue-fg">&gt;</span> pd<span class="ansi-blue-fg">.</span>isna<span class="ansi-blue-fg">(</span>df<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 174</span><span class="ansi-red-fg">     </span><span class="ansi-cyan-fg">0</span>    <span class="ansi-green-fg">False</span>
-<span class="ansi-green-fg ansi-bold">    175</span>     <span class="ansi-cyan-fg">1</span>     <span class="ansi-green-fg">True</span>
-<span class="ansi-green-fg ansi-bold">    176</span>     Name<span class="ansi-blue-fg">:</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">:</span> bool
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/dtypes/missing.py</span> in <span class="ansi-cyan-fg">_isna</span><span class="ansi-blue-fg">(obj)</span>
-<span class="ansi-green-fg ansi-bold">    212</span>             <span class="ansi-green-fg">return</span> obj<span class="ansi-blue-fg">.</span>isna<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    213</span>         <span class="ansi-green-fg">return</span> _isna_array<span class="ansi-blue-fg">(</span>obj<span class="ansi-blue-fg">.</span>_values<span class="ansi-blue-fg">,</span> inf_as_na<span class="ansi-blue-fg">=</span>inf_as_na<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 214</span><span class="ansi-red-fg"> </span>
-<span class="ansi-green-fg ansi-bold">    215</span>     <span class="ansi-green-fg">elif</span> isinstance<span class="ansi-blue-fg">(</span>obj<span class="ansi-blue-fg">,</span> ABCSeries<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg ansi-bold">    216</span>         result <span class="ansi-blue-fg">=</span> _isna_array<span class="ansi-blue-fg">(</span>obj<span class="ansi-blue-fg">.</span>_values<span class="ansi-blue-fg">,</span> inf_as_na<span class="ansi-blue-fg">=</span>inf_as_na<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/frame.py</span> in <span class="ansi-cyan-fg">isna</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-fg ansi-bold">   7421</span>         """
-<span class="ansi-green-fg ansi-bold">   7422</span>         Return a Series containing the frequency of each distinct row <span class="ansi-green-fg">in</span> the Dataframe<span class="ansi-blue-fg">.</span>
-<span class="ansi-green-fg">-&gt; 7423</span><span class="ansi-red-fg"> </span>
-<span class="ansi-green-fg ansi-bold">   7424</span>         Parameters
-<span class="ansi-green-fg ansi-bold">   7425</span>         <span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/internals/managers.py</span> in <span class="ansi-cyan-fg">isna</span><span class="ansi-blue-fg">(self, func)</span>
-<span class="ansi-green-fg ansi-bold">    451</span>             dtype<span class="ansi-blue-fg">=</span>dtype<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg ansi-bold">    452</span>             copy<span class="ansi-blue-fg">=</span>copy<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 453</span><span class="ansi-red-fg">             </span>errors<span class="ansi-blue-fg">=</span>errors<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg ansi-bold">    454</span>             using_cow<span class="ansi-blue-fg">=</span>using_copy_on_write<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg ansi-bold">    455</span>         )
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/internals/managers.py</span> in <span class="ansi-cyan-fg">apply</span><span class="ansi-blue-fg">(self, f, align_keys, **kwargs)</span>
-<span class="ansi-green-fg ansi-bold">    443</span>                 copy <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">False</span>
-<span class="ansi-green-fg ansi-bold">    444</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 445</span><span class="ansi-red-fg">                 </span>copy <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">True</span>
-<span class="ansi-green-fg ansi-bold">    446</span>         <span class="ansi-green-fg">elif</span> using_copy_on_write<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg ansi-bold">    447</span>             copy <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">False</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/internals/blocks.py</span> in <span class="ansi-cyan-fg">apply</span><span class="ansi-blue-fg">(self, func, **kwargs)</span>
-<span class="ansi-green-fg ansi-bold">    345</span>         <span class="ansi-red-fg">#  that never happens with 1-column blocks, i.e. never for ExtensionBlock.</span>
-<span class="ansi-green-fg ansi-bold">    346</span> 
-<span class="ansi-green-fg">--&gt; 347</span><span class="ansi-red-fg">         </span>new_mgr_locs <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_mgr_locs<span class="ansi-blue-fg">[</span>indices<span class="ansi-blue-fg">]</span>
-<span class="ansi-green-fg ansi-bold">    348</span> 
-<span class="ansi-green-fg ansi-bold">    349</span>         new_values <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_slice<span class="ansi-blue-fg">(</span>indices<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/dtypes/missing.py</span> in <span class="ansi-cyan-fg">isna</span><span class="ansi-blue-fg">(obj)</span>
-<span class="ansi-green-fg ansi-bold">    172</span> 
-<span class="ansi-green-fg ansi-bold">    173</span>     <span class="ansi-blue-fg">&gt;&gt;</span><span class="ansi-blue-fg">&gt;</span> pd<span class="ansi-blue-fg">.</span>isna<span class="ansi-blue-fg">(</span>df<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 174</span><span class="ansi-red-fg">     </span><span class="ansi-cyan-fg">0</span>    <span class="ansi-green-fg">False</span>
-<span class="ansi-green-fg ansi-bold">    175</span>     <span class="ansi-cyan-fg">1</span>     <span class="ansi-green-fg">True</span>
-<span class="ansi-green-fg ansi-bold">    176</span>     Name<span class="ansi-blue-fg">:</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">:</span> bool
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/dtypes/missing.py</span> in <span class="ansi-cyan-fg">_isna</span><span class="ansi-blue-fg">(obj)</span>
-<span class="ansi-green-fg ansi-bold">    198</span>     boolean ndarray <span class="ansi-green-fg">or</span> boolean
-<span class="ansi-green-fg ansi-bold">    199</span>     """
-<span class="ansi-green-fg">--&gt; 200</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">if</span> is_scalar<span class="ansi-blue-fg">(</span>obj<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg ansi-bold">    201</span>         <span class="ansi-green-fg">return</span> libmissing<span class="ansi-blue-fg">.</span>checknull<span class="ansi-blue-fg">(</span>obj<span class="ansi-blue-fg">,</span> inf_as_na<span class="ansi-blue-fg">=</span>inf_as_na<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    202</span>     <span class="ansi-green-fg">elif</span> isinstance<span class="ansi-blue-fg">(</span>obj<span class="ansi-blue-fg">,</span> ABCMultiIndex<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/pandas/core/dtypes/missing.py</span> in <span class="ansi-cyan-fg">_isna_array</span><span class="ansi-blue-fg">(values)</span>
-<span class="ansi-green-fg ansi-bold">    244</span>     <span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span><span class="ansi-blue-fg">-</span>
-<span class="ansi-green-fg ansi-bold">    245</span>     This approach to setting <span class="ansi-green-fg">global</span> module values <span class="ansi-green-fg">is</span> discussed <span class="ansi-green-fg">and</span>
-<span class="ansi-green-fg">--&gt; 246</span><span class="ansi-red-fg">     </span>approved here<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg ansi-bold">    247</span> 
-<span class="ansi-green-fg ansi-bold">    248</span>     <span class="ansi-blue-fg">*</span> https<span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">//</span>stackoverflow<span class="ansi-blue-fg">.</span>com<span class="ansi-blue-fg">/</span>questions<span class="ansi-blue-fg">/</span><span class="ansi-cyan-fg">4859217</span><span class="ansi-blue-fg">/</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.13/dist-packages/numpy/__init__.py</span> in <span class="ansi-cyan-fg">__getattr__</span><span class="ansi-blue-fg">(attr)</span>
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'numpy.rec'
-
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span><span class="ansi-green-fg">
-NOTE: If your import is failing due to a missing package, you can
-manually install dependencies using either !pip or !apt.
-
-To view examples of installing some common dependencies, click the
-"Open Examples" button below.
-</span><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-</pre>
+<div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:443}}" data-outputid="66ce06fc-4269-4a45-fe3a-eae346aff7b2" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>(</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    ggplot(df_gym_long.dropna(),</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>           aes(x<span class="op">=</span><span class="st">"event"</span>, y<span class="op">=</span><span class="st">"score"</span>, fill<span class="op">=</span><span class="st">"Round"</span>))</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_boxplot()</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> facet_wrap(<span class="st">"Year"</span>)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> coord_flip()</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">"event"</span>,</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span><span class="st">"score"</span>,</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>        fill<span class="op">=</span><span class="st">"Round"</span>,</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Olympic Men's Gymnastics Scores by Event, Year, and Round"</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_bw()</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Copy_of_GSB5544_PA_2_1_grammar_of_graphics_files/figure-html/cell-13-output-1.png" width="660" height="500" class="figure-img"></p>
+</figure>
 </div>
 </div>
 </div>
